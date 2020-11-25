@@ -9,6 +9,10 @@ export const DEFAULT_GREETING = "Hi there! How can I help today? You can ask me 
                 "\r\n\t Book an appointment with a dentist; and" +
                 "\r\n\t Cancel an appointment";
 
+export const DEFAULT_FAREWELL = "It has a been a pleasure assisting you, enjoy the rest of your day! " +
+                "If you require further assistance, please just refresh the page and we can start again. " +
+                "Ciao!"
+
 export const MISUNDERSTANDING = "Sorry, I don't understand, please try rephrasing.";
 
 export const WIT_TOKEN = 'ISUHC7YRI4DUBCR54XWJMZBNIS3LOMTH'

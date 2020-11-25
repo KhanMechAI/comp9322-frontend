@@ -118,3 +118,17 @@ html, body {
 .send-message-form input::placeholder {
     color: black;
 }
+
+.react-chatbot-kit-chat-bot-message {
+    background-color: #2898ec;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: #fff;
+    font-weight: medium;
+    position: relative;
+    width: 184.5px;
+    margin-left: auto;
+    text-align: left;
+    white-space: pre-line;;
+}

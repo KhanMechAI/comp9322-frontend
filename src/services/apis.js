@@ -11,7 +11,7 @@ export function getAPIURL(params) {
     return url
 }
 
-export async function getUserIntent(params) {
+function getUserIntent({params}) {
     let url = new URL(WIT_BASE_URL)
 
     url.search = new URLSearchParams(params).toString()
@@ -24,7 +24,9 @@ export async function getUserIntent(params) {
             method: 'GET',
             headers: headers,
         }
-    ).then((response) => response.json());
+    ).then((response) => {
+        return response.json()
+    });
 }
 
 
@@ -59,9 +61,9 @@ export async function getAppointments(dentist) {
 }
 
 export async function getDentistList() {
-    let url = getAPIURL()
+    let url = new URL("http://127.0.0.1:5000/api/v1/dentist")
 
-    url.pathname += "dentist"
+
     console.log(url)
 
     let apiResponse = await fetch(
